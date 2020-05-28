@@ -1,5 +1,7 @@
 # radixheap
 
+
+
 ## Description
 
 `radixheap` is a Rust library implementing the *radix heap* data structure.
@@ -13,11 +15,19 @@ size. Each data element is pushed onto the heap as *tuple* by associating a
 natural number with the data as their *key*. The key is used to determine the
 bucket the data has to be put into. The respective *priority element* (the one
 with the lowest key) can later be popped off the heap in minimal time.
-`radixheap` only supports *unsigned 32-bit intergers* (`u32`) as keys.
 
 
 There is already a radix heap library at [crates.io](https://crates.io) which
 is a bit more mature and performs a lot better.
+
+
+
+## API notes
+
+`radixheap` only supports *unsigned 32-bit intergers* (`u32`) as keys.
+Data elements can be of any type that implement (or derive) the traits `Clone`,
+`Debug`, and `Ord`.
+
 
 
 ## Compilation and Execution
@@ -25,25 +35,26 @@ is a bit more mature and performs a lot better.
 The use of the Rust build tool `cargo` is highly recommended. To build
 `radixheap`, `cargo` and the Rust compiler `rustc` are needed.
 
-Running the *unit test* is as simple as:
+Running the *unit tests* is as simple as:
 
-	```
-	$ cargo test
-	```
+```
+$ cargo test
+```
 
 An example code (`basic.rs`) using the library is provided under `examples/`.
 The "example" also looks much like a unit test. It can be run using the command:
 
-	```
-	$ cargo run --example basic
-	```
+```
+$ cargo run --example basic
+```
 
 To build the optimized library `libradixheap.rlib` for use in production the
 following can be executed:
 
-	```
-	$ cargo build --release
-	```
+```
+$ cargo build --release
+```
+
 
 
 ## Copyright

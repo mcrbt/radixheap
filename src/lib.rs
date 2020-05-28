@@ -235,19 +235,6 @@ pub mod radixheap {
 		}
 	}
 
-	// non-trivial because of index: needs to be adapted here
-	#[deprecated]
-	impl<'a, V: 'a + Ord> Default for Bucket<'a, V> {
-		fn default() -> Bucket<'a, V> {
-			Bucket {
-				index: 32,
-				top: None,
-				items: Vec::new(),
-				_phantom: PhantomData {}
-			}
-		}
-	}
-
 	impl<'a, V: 'a + Clone + Debug + Ord> Default for RadixHeap<'a, V> {
 		fn default() -> RadixHeap<'a, V> { RadixHeap::new(None) }
 	}
