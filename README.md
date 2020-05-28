@@ -1,7 +1,6 @@
 # radixheap
 
 
-
 ## Description
 
 `radixheap` is a Rust library implementing the *radix heap* data structure.
@@ -21,13 +20,11 @@ There is already a radix heap library at [crates.io](https://crates.io) which
 is a bit more mature and performs a lot better.
 
 
-
 ## API notes
 
 `radixheap` only supports *unsigned 32-bit intergers* (`u32`) as keys.
 Data elements can be of any type that implement (or derive) the traits `Clone`,
 `Debug`, and `Ord`.
-
 
 
 ## Compilation and Execution
@@ -56,14 +53,12 @@ $ cargo build --release
 ```
 
 
-
 ## Copyright
 
 Copyright &copy; 2019, 2020 Daniel Haase
 
 `radixheap` is licensed under the **GNU Lesser General Public License**,
 version 3.
-
 
 
 ## License disclaimer
