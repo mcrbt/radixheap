@@ -1,0 +1,15 @@
+[package]
+name = "radixheap"
+version = "0.1.4"
+authors = ["Daniel Haase <hs.dnl@web.de>"]
+edition = "2018"
+
+[lib]
+name="radixheap"
+test = true
+plugin = false
+
+[dependencies]
+
+[dev-dependencies]
+rand = "0.7"
