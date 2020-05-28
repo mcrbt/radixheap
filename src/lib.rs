@@ -14,7 +14,7 @@
  *
  * You should have received a copy of the GNU Lesser General Public
  * License along with this program.
- * If not, see <https://www.gnu.org/licenses/gpl-3.0.txt>.
+ * If not, see <https://www.gnu.org/licenses/lgpl-3.0.txt>.
  */
 
 #![crate_type = "lib"]
@@ -122,7 +122,8 @@ pub mod radixheap {
 			// key smaller than key of last extracted element
 			if key < self.toplast { Err("key too small") } else {
 				// convention
-				let bucket = if key == self.toplast { 0 } else { 32 - (key ^ self.toplast).leading_zeros() };
+				let bucket = if key == self.toplast { 0 }
+					else { 32 - (key ^ self.toplast).leading_zeros() };
 
 				// insert key/value pair into bucket
 				self.buckets[bucket as usize].push(key, val.clone())?;
@@ -409,7 +410,7 @@ pub mod radixheap {
 						   .into_iter()
 						   .map(|(k, _)| k)
 				           .collect::<Vec<u32>>(),
-					   vec![3u32, 8, 9, 10, 11, 12, 13, 15, 17]);
+			           vec![3u32, 8, 9, 10, 11, 12, 13, 15, 17]);
 		}
 	}
 }
