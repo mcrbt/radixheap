@@ -16,7 +16,7 @@ bucket the data has to be put into. The respective *priority element* (the one
 with the lowest key) can later be popped off the heap in minimal time.
 
 
-There is already a radix heap library at [crates.io](https://crates.io) which
+There is already a radix heap library on [crates.io](https://crates.io) which
 is a bit more mature and performs a lot better.
 
 
@@ -82,4 +82,4 @@ License along with this program.
 If not, see <https://www.gnu.org/licenses/lgpl-3.0.txt>.
 ```
 
-&lt;[https://www.gnu.org/licenses/lgpl-3.0.txt](https://www.gnu.org/licenses/lgpl-3.0.txt)&gt;
+[https://www.gnu.org/licenses/lgpl-3.0.txt](https://www.gnu.org/licenses/lgpl-3.0.txt)
