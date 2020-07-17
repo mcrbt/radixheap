@@ -1,12 +1,19 @@
 [package]
 name = "radixheap"
 version = "0.1.4"
-authors = ["Daniel Haase <hs.dnl@web.de>"]
+authors = ["Daniel Haase"]
 edition = "2018"
+description = "Radix heap data structure library"
+readme = "README.md"
+repository = "https://github.com/mcrbt/radixheap"
+license = "LGPL-3.0"
+license-file = "LICENSE"
 
 [lib]
 name="radixheap"
 test = true
+doc = false
+bench = false
 plugin = false
 
 [dependencies]
