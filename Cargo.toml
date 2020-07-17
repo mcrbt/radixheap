@@ -10,11 +10,14 @@ license = "LGPL-3.0"
 license-file = "LICENSE"
 
 [lib]
-name="radixheap"
+name = "radixheap"
+path = "src/lib.rs"
 test = true
 doc = false
 bench = false
 plugin = false
+edition = "2018"
+crate-type = ["lib"]
 
 [dependencies]
 
